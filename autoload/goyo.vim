@@ -55,7 +55,7 @@ function! s:decorate()
   let win_width = winwidth(0)
   let win_height = winheight(0)
 
-  let elements = get(g:, 'goyo_decoration_elements', ['~', '~~'])
+  let elements = get(g:, 'goyo_decoration_elements', ['~'])
   " Normalise our grid to the length of the longest element
   let grid_width = max(map(copy(elements), {_, element -> len(element)}))
   let elements_count = len(elements)
