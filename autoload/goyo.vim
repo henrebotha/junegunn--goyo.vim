@@ -69,7 +69,7 @@ function! s:decorate()
   for line_num in range(win_height)
     let random_line = ''
     for i in range(win_width / grid_width + 1)
-      if (rand() % 100) < (density * 100)
+      if (rand() % 10000) < (density * 10000)
         let element = elements[rand() % elements_count]
         " Normalise the element width by padding it with spaces to place it
         " somewhere random in the cell
